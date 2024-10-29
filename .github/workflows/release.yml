@@ -39,7 +39,7 @@ jobs:
           name: dist
           path: dist
       - name: Echo
-        run: ls; pwd;
+        run: ls; pwd; cd dist; ls;
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
